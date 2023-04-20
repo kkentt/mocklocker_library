@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockLocker.Library", "MockLocker.Library\MockLocker.Library.csproj", "{884AF1E6-A599-46B0-918C-47FD43703350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockLocker.Library.Test", "MockLocker.Library.Test\MockLocker.Library.Test.csproj", "{80D98C99-8E85-4C62-99AD-BCA300B88599}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{884AF1E6-A599-46B0-918C-47FD43703350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884AF1E6-A599-46B0-918C-47FD43703350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884AF1E6-A599-46B0-918C-47FD43703350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884AF1E6-A599-46B0-918C-47FD43703350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D98C99-8E85-4C62-99AD-BCA300B88599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D98C99-8E85-4C62-99AD-BCA300B88599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D98C99-8E85-4C62-99AD-BCA300B88599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D98C99-8E85-4C62-99AD-BCA300B88599}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2DEB301-8244-4669-BA89-E5E9BAB11A0C}
+	EndGlobalSection
+EndGlobal
