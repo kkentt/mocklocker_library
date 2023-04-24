@@ -9,19 +9,19 @@ namespace MockLocker.Library
 {
     public class AppSettingsManager
     {
-        private readonly IConfigurationRoot Configuration;
-        public AppSettingsManager()
+        private IConfigurationRoot Configuration;
+        public List<string> GetJsonListFromSettings(string key)
         {
             Configuration = new ConfigurationBuilder()
-                                       .SetBasePath(Directory.GetCurrentDirectory())
-                                       .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                                       .Build();
+                                   .SetBasePath(Directory.GetCurrentDirectory())
+                                   .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                                   .Build();
+            return Configuration.GetSection(key).Get<List<string>>();
         }
-
-        public List<string> GetJsonListFromSettings(string key) => Configuration.GetSection(key).Get<List<string>>();
 
         public void UpdateAppSettings(string key, object newValue)
         {
+
             var json = File.ReadAllText("appsettings.json");
             using (JsonDocument document = JsonDocument.Parse(json))
             {
