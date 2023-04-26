@@ -12,6 +12,7 @@ namespace MockLocker.Library
         private IConfigurationRoot Configuration;
         public List<string> GetJsonListFromSettings(string key)
         {
+            // Call new ConfigurationBuilder in every read from config 
             Configuration = new ConfigurationBuilder()
                                    .SetBasePath(Directory.GetCurrentDirectory())
                                    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -21,7 +22,6 @@ namespace MockLocker.Library
 
         public void UpdateAppSettings(string key, object newValue)
         {
-
             var json = File.ReadAllText("appsettings.json");
             using (JsonDocument document = JsonDocument.Parse(json))
             {
