@@ -1,4 +1,4 @@
-# MockLocker.Library
+# mocklocker_library
 
 MockLocker is a simple library that simulates locker functionality, allowing you to perform actions like unlocking, checking status, and closing locks. This library is easy to use and integrate into your .NET projects.
 
