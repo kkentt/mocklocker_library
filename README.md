@@ -2,6 +2,15 @@
 
 MockLocker is a simple library that simulates locker functionality, allowing you to perform actions like unlocking, checking status, and closing locks. This library is easy to use and integrate into your .NET projects.
 
+## Compatibility
+
+MockLocker.Library is compatible with the following frameworks:
+
+- .NET Framework 4.7.2 and later
+- .NET Core 3.1 and later
+- .NET 5.0 and later
+- .NET Standard 2.0 and later
+
 ## Lock Types
 
 The MockLocker library supports four lock types:
